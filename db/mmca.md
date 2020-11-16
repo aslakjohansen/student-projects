@@ -18,6 +18,8 @@ It should be able to coexist along existing sources and offer a path to integrat
 
 It should keep a history of all indexed documents so that revisions figure as a first-class citizen in the modeling: One revision may be invalid and another valid.
 
+Each piece of information should be should be associated with sources at various granularity (e.g., author, editor and organization). This should feed into a general trustworthiness score.
+
 What would a system like this look like?
 
 ## Approach
