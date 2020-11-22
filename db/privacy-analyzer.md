@@ -36,10 +36,10 @@ Make a tool that can analyze an information model describing a dataset in order 
 3. Litterature review rooted in lessons learned.
 4. Determine metrics for evaluation.
 5. Iterate:
-  1. Use intuition/measurements to find area to target for improvement.
-  2. Improve according to intuition/reasoning.
-  3. Evaluate against previous iteration.
-  4. Document observations
+    1. Use intuition/measurements to find area to target for improvement.
+    2. Improve according to intuition/reasoning.
+    3. Evaluate against previous iteration.
+    4. Document observations
 
 Part of the iteration process is to determine the best data model. Options include:
 - In-process data structure.
