@@ -48,6 +48,7 @@ Part of the iteration process is to determine the best data model. Options inclu
 
 ## Related Work
 
+- [Tool-chain for supporting privacy risk assessments](https://www.youtube.com/watch?v=A81B53vrtT0&list=PL6jLuiS6wP5aVoY5x1D23c9gMXzrtfO_e&index=4)
 - [SymPy](https://www.sympy.org)
 - [Brick](https://brickschema.org)
 - [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))
