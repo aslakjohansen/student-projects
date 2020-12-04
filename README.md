@@ -10,6 +10,7 @@
 
 - [Brick](https://brickschema.org) Metadata model for buildings.
 - [Elixir](https://elixir-lang.org) Programming language with focus on concurrency, high availability, fault-tolerance, low-latency, scalability, hot-upgrades and system-wide live introspection.
+  - [High availability with Elixir and Erlang (Saša Jurić) - Full Stack Fest 2016](https://www.youtube.com/watch?v=Ba3aCm3A0o8)
 - [Go](https://golang.org) Programming language with focus on concurrency.
 - [Rust](https://www.rust-lang.org) Programming language with focus on reliability, efficiency and productivity.
 - [WebAssembly](https://webassembly.org) (WASM) JavaScript replacement.
