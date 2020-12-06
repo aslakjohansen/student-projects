@@ -32,4 +32,5 @@ In short:
 
 - [SymPy](https://www.sympy.org/en/index.html)
 - [Brick](https://brickschema.org)
+- [QUDT](http://www.qudt.org)
 
