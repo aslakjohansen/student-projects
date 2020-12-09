@@ -1,16 +1,18 @@
-# Timeseries Archiver
+# Timeseries Archiver (Odense Tree Database - OtrDB "Otter DB")
 
 **Tags:** streaming data, acid, distributed systems, timeseries data, concurrency, data structures
 
 ## Introduction
 
-At the center for energy informatics we collect and store data from a significant number of streams from equipment in buildings. Each such stream represents a timeseries of values and metadata. That is, a mapping from time to a value (boolean, integral or float) and a key-value store.
+At the software section we need to collect and store data from a significant number of streams from Industry 4.0 equipment and IoT sensors. Each such stream represents a timeseries of values and metadata. That is, a mapping from time to a value (boolean, integral or float) and a key-value store.
 
-Our current archiver setup is becoming problematic to maintain or replicate. We have considered moving to BtrDB, but it requires a cluster to install cleanly. BtrDB is a timeseries database which employs a specialized B+ tree on the datums to cache summary statistics at different temporal granularities. This allows for extremely fast retrieval of summary statistics (to a degree that allows for live zooming) as well as fast inserts.
+At one point we considered moving to BtrDB, but it requires a cluster to install cleanly. BtrDB is a timeseries database which employs a specialized B+ tree on the datums to cache summary statistics at different temporal granularities. This allows for extremely fast retrieval of summary statistics (to a degree that allows for live zooming) as well as fast inserts.
+
+Instead, we would like to implement OtrDB (pronounced Otter DB); A functional equivalent of BtrDB that maintains a similar datastructure, but can be run on budget hardware. A Raspberry Pi 4 can be had with 8GB of memory and an M.2 NVME interface. This is a prime example of a different point in the designspace.
 
 ## Problem
 
-BtrDB scales to tens of millions of writes per second for a single instance. This is not really necessary for us, and we dislike the hardware requirements. So, how much performance would we have to give up if we implement a new tree-based archiver to run on a Raspberry Pi (or a laptop)?
+BtrDB scales to tens of millions of writes per second for a single instance. For many applications this is not really necessary, and the hardware requirements restricts applicability. So, how much performance would we have to give up if we implement a new tree-based archiver to run on a Raspberry Pi (or a laptop)?
 
 ## Approach
 
