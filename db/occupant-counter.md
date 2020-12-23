@@ -1,4 +1,4 @@
-# Project Title
+# Occupant Counter
 
 **Tags:** occupancy, iot, embedded, computer vision, privacy
 
