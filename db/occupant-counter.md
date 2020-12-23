@@ -26,7 +26,9 @@ Use ESP32-Cam modules:
 - They have communication: WIFI and BLE.
 - They have a 2Mpixels camera.
 - They have a MicroSD card reader.
-- **Note:** Separate programmer needed.
+- **Note:**
+  - Separate programmer needed.
+  - C programming (with out a garbage collector) will be necessary.
 
 In order to preserve privacy an image should never leave the device (except for when debugging).
 
@@ -36,4 +38,4 @@ Ideally, the relevant counting lines will be automatically determined based on a
 
 - [ESP32-CAM Video Streaming and Face Recognition with Arduino IDE](https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/)
 - Commercial competition: [Xovis](https://www.xovis.com/en/products/)
-
+ 
