@@ -18,5 +18,11 @@ How can one enable a number of users to upload code to and operate (provide inpu
 
 ## Approach
 
+Potential devices:
+- [PyCom FiPy](https://pycom.io/product/fipy/)
+- [ESP32 - Azure IoT Kit](https://www.espressif.com/en/products/devkits/esp32-azure-kit/overview)
+- [Pine64 PineNut](https://pine64.com/product/pinenut-model12s-wifi-ble5-stamp/?v=b440ee21efe2)
+- Various Ardiuno platforms.
+
 ## Related Work
 
