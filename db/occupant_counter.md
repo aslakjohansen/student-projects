@@ -20,7 +20,7 @@ How far (in terms of counting accuracy and privacy preservation) can we get by u
 ## Approach
 
 Use ESP32-Cam modules:
-- They are cheap: [Here](https://www.amazon.de/Aideepen-Entwicklungsplatine-Bluetooth-Modul-Kamera-Modul-AP-Arbeitsmodus/dp/B08G1FR1VF/ref=sr_1_9?dchild=1&keywords=esp32-cam&qid=1608718478&sr=8-9) is 3 modules for 22€
+- They are cheap: [Here](https://www.amazon.de/Aideepen-Entwicklungsplatine-Bluetooth-Modul-Kamera-Modul-AP-Arbeitsmodus/dp/B08G1FR1VF/ref=sr_1_9?dchild=1&keywords=esp32-cam&qid=1608718478&sr=8-9) are 3 modules for 22€
 - They have a dual-code 32-bit processor running 240MHz.
 - They have 520kB SRAM and 4M PSRAM.
 - They have communication: WIFI and BLE.
@@ -28,7 +28,7 @@ Use ESP32-Cam modules:
 - They have a MicroSD card reader.
 - **Note:**
   - Separate programmer needed.
-  - C programming (with out a garbage collector) will be necessary.
+  - C programming (without a garbage collector) will be necessary.
 
 In order to preserve privacy an image should never leave the device (except for when debugging).
 
