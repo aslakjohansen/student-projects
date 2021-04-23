@@ -20,6 +20,7 @@
   - (Proper) graph databases and graph querying languages (e.g., [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))).
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
 - Hardware:
+  - [Pine64 NutCracker](https://wiki.pine64.org/wiki/Nutcracker) Extremely cheap IoT devices based on the open source(ish) RISC-V architecture.
   - [Pine64 PineTime](https://www.pine64.org/pinetime/) Smart Watch:
     - [Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT](https://medium.com/swlh/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159)
     - [chip8.rs: CHIP-8 Game Emulator in Rust for PineTime Smart Watch](https://lupyuen.github.io/pinetime-rust-mynewt/articles/chip8)
