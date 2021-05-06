@@ -12,6 +12,8 @@ How can we design a clicker system, that allow us to define surveys programatica
 
 Also, can this be gamified, so that users can (pseudo?)anonymously compare themselves to the cohort of the class? Or perhaps another class from a competing university?
 
+Which other innovative *features* could be implemented if we don't need a human interface?
+
 ## Approach
 
 [Elixir](https://elixir-lang.org) with [Phoenix LiveView](https://www.youtube.com/watch?v=k4mSbCoBTPI) would be natural choices for the job.
