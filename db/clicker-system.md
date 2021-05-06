@@ -21,4 +21,5 @@ Which other innovative *features* could be implemented if we don't need a human 
 ## Related Work
 
 - [PollEverywhere](https://www.polleverywhere.com)
+- [Building students’ knowledge one click at a time](http://ojs.statsbiblioteket.dk/index.php/lom/article/view/7285/6602)
 
