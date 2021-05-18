@@ -27,4 +27,5 @@ Which other innovative *features* could be implemented if we don't need a human 
 - Vanderbilt University’s [site](https://cft.vanderbilt.edu/guides-sub-pages/clickers/) on Classroom Response Systems
 - [What is Bloom's Digital Taxonomy?](https://www.youtube.com/watch?v=fqgTBwElPzU&t=8s)
 - [Matching student respons questions via Bloom’s taxonomy – a five-step approach](https://youtu.be/n_tFCdHcF3M)
+- [The Grammar of Graphics](https://www.springer.com/gp/book/9780387245447) Disaggregation of "graphics" could be inspirational.
 
