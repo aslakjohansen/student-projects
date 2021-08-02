@@ -39,3 +39,4 @@ There is within the area of proof systems a logic for describing the steps that 
 
 A true graph database could be a good way of storing the data.
 
+See also the [open-source journalism](https://en.wikipedia.org/wiki/Open-source_journalism) page on wikipedia.
