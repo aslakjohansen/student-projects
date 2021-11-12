@@ -10,6 +10,7 @@ Golang might prove a workable middle-ground with its strong concurrency support.
 
 Alternatively, we could explore the possibility of having the course switch platform from ESP32 to one of:
 
+- [Pine64 PineCone](https://wiki.pine64.org/wiki/Nutcracker)
 - [HiFive1 Rev B](https://www.sifive.com/boards/hifive1-rev-b) or similar [RISC-V board](https://www.seeedstudio.com/catalogsearch/result/?q=risc-v)
 - Something [else](https://tinygo.org/microcontrollers). Does this include a [Teensy](https://www.pjrc.com/store/)?
 
