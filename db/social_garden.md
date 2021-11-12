@@ -1,6 +1,6 @@
 # The Social Garden
 
-**Tags:** social network, prediction, energy conservation, embedded, iot
+**Tags:** social network, prediction, energy conservation, embedded, iot, programmable people
 
 ## Introduction
 
