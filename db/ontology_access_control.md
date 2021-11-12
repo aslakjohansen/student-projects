@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Access models are typically defining access either on individual locations or via blacklists and whitelists using patterns on locations.
+Access models are typically defining access either on individual locations or via blacklists and/or whitelists using patterns on locations.
 
 The approach of individual locations becomes next to useless when applied to an evolving model based on an RDF-based ontology. The patterns of a blacklist/whitelist approach naturally translates to a query.
 
