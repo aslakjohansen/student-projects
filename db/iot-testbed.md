@@ -4,6 +4,8 @@
 
 ## Introduction
 
+While having access to a physical IoT device in invaluable while developing, sometimes (e.g., under COVID-19) that is not possible. Also, during certain periods of development you might need to experiment with a larger number of devices. For these purposes you can construct testbeds; installations of devices which you can remotely program, probe and observe.
+
 ## Problem
 
 How can one enable a number of users to upload code to and operate (provide input to/receive output from) IoT devices deployed under different circumstances?
