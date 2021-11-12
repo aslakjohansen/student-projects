@@ -14,6 +14,10 @@ The triples of RDF is one way of modeling this. Graphs is another.
 
 What would it take to "port" the Brick schema, a model following it, and an application to a graph? What would the benefits be, and what are the disadvantages? To which degree can this porting process be done automatically, so that updates to any of the inputs (Brick schema, building model, application query)?
 
+### Variation
+
+Could this problem be generalized to target arbitrary RDF/OWL ontologies and models?
+
 ## Approach
 
 Perhaps use [neo4j](https://neo4j.com)?
