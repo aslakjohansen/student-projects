@@ -26,11 +26,11 @@ This naturally leads to:
     - [José Valim - Idioms for building distributed fault-tolerant applications with Elixir](https://www.youtube.com/watch?v=MMfYXEH9KsY)
     - [Saša Jurić - High availability with Elixir and Erlang - Full Stack Fest 2016](https://www.youtube.com/watch?v=Ba3aCm3A0o8)
   - [Rust](https://www.rust-lang.org) Programming language with focus on reliability, efficiency and productivity.
-  - [WebAssembly](https://webassembly.org) (WASM) JavaScript replacement.
-  - [Go](https://golang.org) Programming language with focus on concurrency.
+  - [WebAssembly](https://webassembly.org) (WASM) JavaScript replacement. Usually through Rust (see above).
+  - [Go](https://golang.org) Programming language with focus on concurrency on a single host.
 - Alternative forms of databases:
   - (Proper) timeseries databases (potentially [Prometheus](https://en.wikipedia.org/wiki/Prometheus_(software))).
-  - (Proper) graph databases and graph querying languages (e.g., [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))).
+  - (Proper) graph databases and graph querying languages (e.g., [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language)) and [Neo4J](https://neo4j.com)).
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
 - Hardware:
   - [Pine64 NutCracker](https://wiki.pine64.org/wiki/Nutcracker) Extremely cheap IoT devices based on the open source(ish) RISC-V architecture.
