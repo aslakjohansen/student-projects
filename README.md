@@ -6,9 +6,14 @@
 
 In a systems context:
 - **Concurrency** Logic defined in a way that allows for parallelism but doesn't require it.
-- **Availability** Keeping a service available despite faults in soft- and hardware. 
+- **Availability** Keeping a service available despite faults in soft- and hardware.
+  - Supervision in systems based on the [actor model](https://en.wikipedia.org/wiki/Actor_model) (e.g., through [Elixir](https://elixir-lang.org)).
+  - Netsplits and split brain scenarios.
 - **Responsiveness** Keeping the system responsive despite a high load.
+  - Bounding concurrency through back pressure.
+  - Push-based data flow transformes problems to routing problems.
 - **Metadata** Modeling and interaction with data used to describe other data.
+  - Graphs and ontologies.
 - **Efficiency** Software that operates at reasonable levels of efficiency.
 - **Automation** Moving tasks to software to enable repeated processing at low cost.
 
