@@ -16,6 +16,9 @@ Implement a multi-gateway mesh networking protocol on top of LORA trancievers.
 
 ## Related Work
 
+- [Hackaday: 
+LoRa Mesh Network With Off-the-Shelf Hardware](https://hackaday.com/2020/02/26/lora-mesh-network-with-off-the-shelf-hardware/)
+- [LoRa Mesh Networking](https://github.com/nootropicdesign/lora-mesh)
 - [Route Poisoning and Count to infinity problem in Routing](https://www.geeksforgeeks.org/route-poisoning-and-count-to-infinity-problem-in-routing/)
 - [Eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 - Low-Power listening:
