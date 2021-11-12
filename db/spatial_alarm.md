@@ -8,6 +8,11 @@ A normal alarm clock rings the moment a specific point in time has been reached.
 
 ## Problem
 
+How can such an alarm app be implemented on a smartphone?
+- What should the configuration interface look like?
+- How should the notification be done to limit disturbances to passengers?
+  - Could this be done by providing gradual hints (e.g., humming)?
+
 ## Approach
 
 ## Related Work
