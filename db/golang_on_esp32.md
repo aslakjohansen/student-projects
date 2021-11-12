@@ -14,6 +14,8 @@ Alternatively, we could explore the possibility of having the course switch plat
 - [HiFive1 Rev B](https://www.sifive.com/boards/hifive1-rev-b) or similar [RISC-V board](https://www.seeedstudio.com/catalogsearch/result/?q=risc-v)
 - Something [else](https://tinygo.org/microcontrollers). Does this include a [Teensy](https://www.pjrc.com/store/)?
 
+Another alternative dimension would be to port [Elixir](https://elixir-lang.org) to a microcontroller. That would allow us to move logic "freely" in between cloud and microcontroller-based devices. Some work is already being done with [AtomVM](https://github.com/bettio/atomvm).
+
 ## Problem
 
 Make a nontrivial demo program for an ESP32 (e.g., the [ESP32 Azure Kit](https://www.espressif.com/en/products/devkits/esp32-azure-kit/overview)). This should have multiple concurrent processes.
