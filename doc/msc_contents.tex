@@ -35,8 +35,12 @@
     Logic defined in a way that allows for parallelism but doesn't require it.
     \vspace{3mm}
     \begin{itemize}
-        \item Actor Model (e.g., as used in Elixir)
-        \item 
+        \item Concurrency models:
+          \begin{itemize}
+            \item Granularity: From threads to CSP.
+            \item Actor Model (e.g., as used in Elixir).
+          \end{itemize}
+        \item Introspection of concurrent systems.
     \end{itemize}
 \end{frame}
 
@@ -47,8 +51,12 @@
     Keeping a service available despite faults in soft- and hardware. 
     \vspace{3mm}
     \begin{itemize}
+        \item Fault tolerance.
+        \item Graceful degredation.
         \item Supervision trees.
         \item Netsplits and resulting split brain scenarios.
+        \item Hot-updates.
+        \item Live introspection.
     \end{itemize}
 \end{frame}
 
@@ -71,9 +79,14 @@
     Modeling and interaction with data used to describe other data.
     \vspace{3mm}
     \begin{itemize}
-        \item Interactions models for metadata
-        \item Graphs
-        \item Ontologies
+        \item Interactions models for metadata.
+        \item Metadata lifecycle.
+          \begin{itemize}
+            \item Metadata as a timeseries.
+            \item Correction to historical metadata.
+          \end{itemize}
+        \item Graphs.
+        \item Ontologies.
     \end{itemize}
 \end{frame}
 
@@ -81,10 +94,11 @@
 \begin{frame}
     \frametitle{Efficiency}
     \vspace{0mm}
-    Software that operates at reasonable levels of efficiency.
+    Software that operates at \textsl{reasonable} levels of efficiency.
     \vspace{3mm}
     \begin{itemize}
-        \item
+        \item Green computing.
+        \item API design for efficient operations.
     \end{itemize}
 \end{frame}
 
@@ -95,7 +109,7 @@
     Moving tasks to software to enable repeated processing at low cost.
     \vspace{3mm}
     \begin{itemize}
-        \item
+        \item 
     \end{itemize}
 \end{frame}
 
