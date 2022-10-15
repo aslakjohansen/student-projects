@@ -8,15 +8,30 @@ The property graph is an attractive way of modelling data. Neo4j popularized it 
 
 Their query language (Cypher) has been standardized as OpenCypher and adopted by multiple players in the industry. The grammar of OpenCypher is publicly available, and the data model is actually quite simple.
 
-## Problem
+## Direction 1: Rely on Existing DMBS
+
+### Problem
 
 What would it take to build a DMBS frontend, that can receive a OpenCypher query, parse it, and distribute the resolution to a set of property graph DBMS?
 
-## Approach
+### Approach
 
 The approach would likely include:
 - Focus on a relevant subset of the OpenCypher functionalities.
 - Accept that ACID compliance is not ensured.
+
+## Direction 2: Build Own DBMS
+
+### Problem
+
+What would it take to build a generic (distributed) DBMS that is OpenCypher compliant?
+
+### Approach
+
+The approach would likely include:
+- Focus on a relevant subset of the OpenCypher functionalities.
+- Accept that ACID compliance is not ensured.
+- Try to generalize so that multiple domains can be served by framework (e.g., if the `PropertyGraphNode` interface is implemented then the object can be queried).
 
 ## Related Work
 
