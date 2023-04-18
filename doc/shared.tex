@@ -15,6 +15,7 @@
 \usepackage{fancyvrb} % for different fontsize in verbatim
 \usepackage[T1]{fontenc} % for |
 \usepackage{multicol} % for multicols
+\usepackage{dirtytalk} % for \say quotation
 
 \definecolor{htmltagnamecolor}{RGB}{0, 128, 0}
 \definecolor{htmltagkeycolor}{RGB}{125, 143, 40}
@@ -25,6 +26,8 @@
 \newcommand{\tagname}[1]{\textcolor{htmltagnamecolor}{#1}}
 \newcommand{\tagkey}[1]{\textcolor{htmltagkeycolor}{#1}}
 \newcommand{\tagvalue}[1]{\textcolor{htmltagvaluecolor}{#1}}
+
+\newcommand{\quoted}[1]{\textsl{\say{#1}}}
 
 % sparql highlighting
 \usepackage[cache=false]{minted}            % code inclusion

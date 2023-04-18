@@ -18,7 +18,7 @@
     Technology stack: C, Rust, Python, Elixir, Go, Nerves, Phoenix, Neo4J, Cypher, TimescaleDB, Cairo, SVG, GIT, FreeRTOS \ldots
     
     \vspace{3mm}
-    More project ideas are available here: \url{https://github.com/aslakjohansen/student-projects}
+    More project ideas (of varying size) are available here: \url{https://github.com/aslakjohansen/student-projects}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,6 +64,7 @@
         \item Netsplits and resulting split brain scenarios.
         \item Hot-updates.
         \item Live introspection.
+        \item Unit testing for availability.
     \end{itemize}
 \end{frame}
 
@@ -75,7 +76,7 @@
     \vspace{5mm}
     \begin{itemize}
         \item Bounding concurrency through back pressure.
-        \item Push-based data flow transforms problems to routing problems.
+        \item Push-based data flow that transforms problems to routing problems.
         \item Modeling the distribution of responsiveness.
         \item Polling-free operation.
     \end{itemize}
@@ -85,10 +86,10 @@
 \begin{frame}
     \frametitle{Metadata}
     \vspace{0mm}
-    Modeling and interaction with data used to describe other data.
+    Modeling (and interaction with) data used to describe other data.
     \vspace{2mm}
     \begin{itemize}
-        \item Software-defined metadata where the decision of \textsl{how} parts of a query against a metadata model are resolved can be taken dynamically, and be implemented by arbitrary logic. This can take physical state into account or extend the set of available physical sensors (from the model) with virtual sensors that are spun up on demand.
+        \descitem{Software-defined metadata} The decision of \textsl{how} parts of a query against a metadata model are resolved can be taken dynamically, and be implemented by arbitrary logic. This can take physical state into account, or extend the set of available physical sensors (from the model) with virtual sensors that are spun up on demand.
         \item Interactions models for metadata.
           \begin{itemize}
             \item Query-based subscriptions.
@@ -116,7 +117,7 @@
         \item Non-destructive processing.
         \item Caching-friendly DAG-Based data processing.
         \item Demand-driven data processing and transfer.
-        \item Virtual assets and sensors, that extends the applicability of existing physical assets and sensors.
+        \item Virtual assets and sensors, that extend the applicability of existing physical assets and sensors.
     \end{itemize}
 \end{frame}
 
@@ -132,6 +133,7 @@
           \url{https://github.com/aslakjohansen/svg-narrative}
         \item Large-scale automated benchmarking.
         \item Document transformations.
+        \item Having a single root of truth.
     \end{itemize}
 \end{frame}
 
@@ -169,7 +171,7 @@
     Themes:
     \begin{itemize}
         \item Monitoring of environmental properties using battery- or solar-powered sensor boards.
-        \item Processing of multispectral satellite images (e.g., to count trees and create a heatmap of average tree diameter).
+        \item Processing of multispectral satellite images (e.g., to count trees, create a heatmap of average tree diameter, or track use of pesticides).
         \item Using a camera as a sensor.
         \item Robust LoRa-based data collection network for environmental data.
         \item The EU taxonomy for sustainable activities:
@@ -195,6 +197,9 @@
             \item Flexible clicker platform
               \\
               \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/clicker-system.md}}
+          \end{itemize}
+        \item Privacy
+          \begin{itemize}
             \item Privacy Analyzer
               \\
               \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/privacy-analyzer.md}}
@@ -219,10 +224,10 @@
 \begin{frame}
     \frametitle{PubSub Broker Supporting Demand-Driven Publications}
     \vspace{3mm}
-    The Publish-Subscribe pattern allows subscribers to receive data from publishers via named channels. A broker (or more) are used to match up publications to subscribers, but also serves the role of decoupling the two sides.
+    The Publish-Subscribe pattern allows subscribers to receive data from publishers via named channels. A broker (or more) is used to match up publications to subscribers, but also serves the role of decoupling the two sides.
     
     \vspace{5mm}
-    Accordingly, a subscriber does not know is anyone is consuming the produced data, and thus the pattern provides no means of automatically deciding wheter a datastream should be produced or not.
+    Accordingly, a subscriber does not know if anyone is consuming the produced data, and thus the pattern provides no means of automatically deciding whether a datastream needs be produced or not.
     
     \vspace{5mm}
     This project seeks to add a step whereby the publishers -- through a form of two-way pubsub -- are informed of the ongoing subscriptions. Based on this they can then decide on which datastreams to publish. The improved efficiency model will allow for a larger suite of datastreams to be offered, while only \textsl{paying} for those being consumed.
@@ -250,7 +255,7 @@
 \begin{frame}
     \frametitle{D3 Phoenix LiveView Components}
     \vspace{0mm}
-    Phoenix is a modern web framework that allows for quick prototyping of web applications while keeping a simple path to transitioning it to production. It is build around a MVC component model called LiveView that crosses the client/server boundary and naturally provides fast response times and hot updates. As long as existing components are applicable, not JavaScript code is necessary to make a website. The set of LiveView components for plotting is limited.
+    Phoenix is a modern web framework that allows for quick prototyping of web applications while keeping a simple path for transitioning it to production. It is build around a MVC component model called LiveView that crosses the client/server boundary and naturally provides fast response times and hot updates. As long as existing components are applicable, no JavaScript code is necessary to make a website. However, the set of LiveView components for plotting is limited.
     
     \vspace{3mm}
     D3 is an attractive JavaScript framework for plotting.
@@ -268,23 +273,41 @@
 %    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
 \end{frame}
 
-\subsection{Make Media Credible Again}
-\begin{frame}
-    \frametitle{Make Media Credible Again}
-    \vspace{0mm}
-    During the last decade or so, the credibility of online media has taken a dive. It has gotten so bad that there is no longer a shared sense of reality, and that has severe democratic implications.
-    
-    \vspace{3mm}
-    We would like to create a system that allows us to track the premise graph of news:
-    \begin{itemize}
-      \item Peer review based on user preferences rooted in a social network.
-      \item Users will see credibility scores based on functions over their own set of trusted references. This makes the score subjective, and that subjectiveness should be observable through cluster and fragility analysis.
-      \item Cycle detection to highlight that an "argument" is cyclic in nature and thus invalid.
-      \item Subgraph invalidation when a premise is debunked.
-      \item Subscription to invalidation. So that users get notified whenever a document that they have consumed is found invalid.
-    \end{itemize}
+%\subsection{Make Media Credible Again}
+%\begin{frame}
+%    \frametitle{Make Media Credible Again}
+%    \vspace{0mm}
+%    During the last decade or so, the credibility of online media has taken a dive. It has gotten so bad that there is no longer a shared sense of reality, and that has severe democratic implications.
+%    
+%    \vspace{3mm}
+%    We would like to create a system that allows us to track the premise graph of news:
+%    \begin{itemize}
+%      \item Peer review based on user preferences rooted in a social network.
+%      \item Users will see credibility scores based on functions over their own set of trusted references. This makes the score subjective, and that subjectiveness should be observable through cluster and fragility analysis.
+%      \item Cycle detection to highlight that an "argument" is cyclic in nature and thus invalid.
+%      \item Subgraph invalidation when a premise is debunked.
+%      \item Subscription to invalidation. So that users get notified whenever a document that they have consumed is found invalid.
+%    \end{itemize}
 
-    \vspace{3mm}
-    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/mmca.md}}
+%    \vspace{3mm}
+%    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/mmca.md}}
+%\end{frame}
+
+\subsection{Pesticide Use Monitoring}
+\begin{frame}
+    \frametitle{Pesticide Use Monitoring}
+    % problem
+    Pesticides from the agricultural sector are finding their way into the ground water. While there are regulations in place to govern when and how much can be sprayed, the reality is that a only a small number of annual inspections are mandated. As a result, chances of getting caught are slim.
+    \vspace{2mm}
+    
+    % dataset
+    Multispectral data from satellites can be used to detect to calculate the photosynthetic activity (aka \quoted{greeness}) of areas. When combined with GIS data defining the geographical areas of farmers plots, such plots can be mapped to greenness. Each pass these satellites generate a snapshot of that mapping at a single point in time. The history of passing shows how it evolves over time.
+    \vspace{2mm}
+    
+    % approach
+    By analyzing this evolution we can detect which plots have likely been exposed to excessive amounts of pesticides, and use this to guide the inspectors to the most likely violations. That will make the act of polluting our groundwater more risky.
+    \vspace{2mm}
+    
+    More information will appear at: \scalebox{0.75}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/pesticide-use-monitoring.md}}
 \end{frame}
 
