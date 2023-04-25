@@ -31,9 +31,11 @@ Concretely:
 ## Additional
 
 Governmental mapping of ground water by the Danish Environmental Protectil Agency (da: Miljøstyrelsen): Ground water with coding for drinking water interests (da: drikkevndsinteresser, OSD) and collection area (da: indvindingsopland, IOL) for water resources:
-[<img src="https://github.com/aslakjohansen/student-projects/raw/master/db/figs/groud-water.png">](https://mst.dk/natur-vand/vand-i-hverdagen/grundvand/grundvandskortlaegning/)
+<p align="center">
+  [<img src="https://github.com/aslakjohansen/student-projects/raw/master/db/figs/groud-water.png">](https://mst.dk/natur-vand/vand-i-hverdagen/grundvand/grundvandskortlaegning/)
+</p>
 
 Detected pesticides with indication of threshold value (da: grænseværdi, GV):
-[<img src="https://github.com/aslakjohansen/student-projects/raw/master/db/figs/pesticide-level.png">](https://data.geus.dk/geusmap/?mapname=grundvand#baslay=baseMapDa&optlay=&extent=29341.797086927923,5632862.6489539575,1236008.4637535946,6924373.0656206235&layers=mc_grp_analyse&filter_0=dgu_nr%3D%26stofgruppe.num%3D50%26maengde.min%3D%26proeveaar.min%3D%26boringstype%3D%26boringsanvendelse.part%3Dvand%26kommune_navn.part%3D%26stof_tekst_hidden.part%3D%26indtag_bund_dybde.min%3D%26indtag_top_dybde.max%3D%26grumo_loop%3D)
-
-
+<p align="center">
+  [<img src="https://github.com/aslakjohansen/student-projects/raw/master/db/figs/pesticide-level.png">](https://data.geus.dk/geusmap/?mapname=grundvand#baslay=baseMapDa&optlay=&extent=29341.797086927923,5632862.6489539575,1236008.4637535946,6924373.0656206235&layers=mc_grp_analyse&filter_0=dgu_nr%3D%26stofgruppe.num%3D50%26maengde.min%3D%26proeveaar.min%3D%26boringstype%3D%26boringsanvendelse.part%3Dvand%26kommune_navn.part%3D%26stof_tekst_hidden.part%3D%26indtag_bund_dybde.min%3D%26indtag_top_dybde.max%3D%26grumo_loop%3D)
+</p>
