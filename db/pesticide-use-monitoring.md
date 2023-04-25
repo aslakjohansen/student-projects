@@ -16,7 +16,7 @@ Pesticides from the agricultural sector are finding their way into the ground wa
 
 By analyzing this evolution we can detect which plots have likely been exposed to excessive amounts of pesticides, and use this to guide the inspectors to the most likely violations. That will make the act of polluting our groundwater more risky.
 
-Concretely,
+Concretely:
 - The project will analyze satellite imagery from July 1st to December 1st (both 2020) in order to detect events of plots withering.
 - The project will focus on potatoes, where pesticides are being used to wither the plants to avoid fungal infection. This happens in the July-September period.
 - In addition to temporal restrictions of then pesticides can be used, there are also geographical restrictions in terms distance to water courses and public areas.
@@ -31,9 +31,9 @@ Concretely,
 ## Additional
 
 Governmental mapping of ground water by the Danish Environmental Protectil Agency (da: Miljøstyrelsen): Ground water with coding for drinking water interests (da: drikkevndsinteresser, OSD) and collection area (da: indvindingsopland, IOL) for water resources:
-[![Ground water with coding for drinking water interests](figs/groud-water.png)](https://mst.dk/natur-vand/vand-i-hverdagen/grundvand/grundvandskortlaegning/)
+[<img src="figs/groud-water.png">](https://mst.dk/natur-vand/vand-i-hverdagen/grundvand/grundvandskortlaegning/)
 
 Detected pesticides with indication of threshold value (da: grænseværdi, GV):
-[![Detected pesticides with indication of threshold value](figs/pesticide-level.png)](https://data.geus.dk/geusmap/?mapname=grundvand#baslay=baseMapDa&optlay=&extent=29341.797086927923,5632862.6489539575,1236008.4637535946,6924373.0656206235&layers=mc_grp_analyse&filter_0=dgu_nr%3D%26stofgruppe.num%3D50%26maengde.min%3D%26proeveaar.min%3D%26boringstype%3D%26boringsanvendelse.part%3Dvand%26kommune_navn.part%3D%26stof_tekst_hidden.part%3D%26indtag_bund_dybde.min%3D%26indtag_top_dybde.max%3D%26grumo_loop%3D)
+[<img src="figs/pesticide-level.png">](https://data.geus.dk/geusmap/?mapname=grundvand#baslay=baseMapDa&optlay=&extent=29341.797086927923,5632862.6489539575,1236008.4637535946,6924373.0656206235&layers=mc_grp_analyse&filter_0=dgu_nr%3D%26stofgruppe.num%3D50%26maengde.min%3D%26proeveaar.min%3D%26boringstype%3D%26boringsanvendelse.part%3Dvand%26kommune_navn.part%3D%26stof_tekst_hidden.part%3D%26indtag_bund_dybde.min%3D%26indtag_top_dybde.max%3D%26grumo_loop%3D)
 
 
