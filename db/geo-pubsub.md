@@ -1,6 +1,6 @@
 # State-Scale Pubsub Substrate with Consistent Minimal Latency for Geographical Proximity
 
-**Tags:** Publish Subscribe, Latency, 
+**Tags:** Publish Subscribe, Latency, Graph, Mesh, Eventual Consistency
 
 ## Introduction
 
