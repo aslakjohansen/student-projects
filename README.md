@@ -45,6 +45,8 @@ Alternative forms of databases:
   - [OpenCypher](https://opencypher.org)
   - [Neo4J](https://neo4j.com) A property graph database.
   - [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))
+- Wide-column data stores like:
+  - [ScyllaDB](https://www.scylladb.com)
 
 Frameworks:
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
