@@ -48,7 +48,7 @@ Alternative forms of databases:
 - Wide-column data stores like:
   - [ScyllaDB](https://www.scylladb.com)
 
-Frameworks:
+Embedded Frameworks:
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
 - [AtomVM](https://www.atomvm.net) Running BEAM code (e.g., Elixir) on microcontrollers.
 - [Nerves](https://nerves-project.org) Running Elixir on top of small general-purpose hardware (e.g., Raspberry Pi).
