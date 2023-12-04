@@ -2,315 +2,322 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Themes
 \section{Introduction}
 \begin{frame}
-    \frametitle{Introduction}
-    \vspace{0mm}
-    These slides form an overview of those themes and domains that best define my primary interests. However, I am keen to find new domains that can benefit from similar approaches, and new approaches the can benefit my existing domains of interest.
-    
-    \vspace{2mm}
-    In general:
-    \begin{itemize}
-      \item Software-define metadata.
-      \item In-network processing.
-      \item Designing for polling-free/push-based operations.
-    \end{itemize}
-    
-    \vspace{2mm}
-    Technology stack: C, Rust, Python, Elixir, Go, Nerves, Phoenix, Neo4J, Cypher, TimescaleDB, Cairo, SVG, GIT, FreeRTOS \ldots
-    
-    \vspace{2mm}
-    Industry collaboration: EnergiNet, Danish Environmental Protection Agency (da: Miljøstyrelsen)
-    
-    \vspace{2mm}
-    More project ideas (of varying size) are available on Discord supervision server and here: \url{https://github.com/aslakjohansen/student-projects}
+  \frametitle{Introduction}
+  \vspace{0mm}
+  These slides form an overview of those themes and domains that best define my primary interests. However, I am keen to find new domains that can benefit from similar approaches, and new approaches the can benefit my existing domains of interest.
+  
+  \vspace{2mm}
+  In general:
+  \begin{itemize}
+    \item Software-define metadata/information.
+    \item In-network processing.
+    \item Designing for polling-free operations.
+  \end{itemize}
+  
+  \vspace{2mm}
+  \textbf{Technology stack:} C, \href{https://www.youtube.com/watch?v=5C_HPTJg5ek}{Rust}, Python, \href{https://www.youtube.com/watch?v=R7t7zca8SyM}{Elixir}, Go, Nerves, \href{https://www.youtube.com/watch?v=U_Pe8Ru06fM}{Phoenix Liveview}, \href{https://livebook.dev/}{Livebook}, Neo4J, \href{https://opencypher.org}{OpenCypher}, TimescaleDB, \href{https://www.cairographics.org}{Cairo}, \href{https://en.wikipedia.org/wiki/SVG}{SVG}, \href{https://d3js.org}{D3}, GIT, \href{https://www.freertos.org}{FreeRTOS} \ldots
+  
+  \vspace{2mm}
+  \textbf{Industry collaboration:} EnergiNet, Danish Environmental Protection Agency (da: Miljøstyrelsen)
+  
+  \vspace{2mm}
+  More project ideas (of varying size) are available on Discord supervision server and here: \url{https://github.com/aslakjohansen/student-projects}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Themes
 \section{Themes}
 \begin{frame}
-    \vspace{25mm}
-    \begin{center}
-        \Huge{Part 1:\\Themes}
-    \end{center}
+  \vspace{25mm}
+  \begin{center}
+    \Huge{Part 1:\\Themes}
+  \end{center}
 \end{frame}
 
 \subsection{Concurrency}
 \begin{frame}
-    \frametitle{Concurrency}
-    \vspace{3mm}
-    Logic defined in a way that allows for parallelism but doesn't require it.
-    \vspace{5mm}
-    \begin{itemize}
-        \item Distribution as a first-class citizen.
-        \item Concurrency models:
-          \begin{itemize}
-            \item Granularity: From threads to CSP.
-            \item Actor Model (e.g., as used in Elixir).
-          \end{itemize}
-        \item Introspection of concurrent systems.
-        \item Bounding concurrency.
-        \item Moving processing to where the data is.
-        \item Distribution models: Trading latency and traffic against availability and recovery time.
-    \end{itemize}
+  \frametitle{Concurrency}
+  \vspace{3mm}
+  Logic defined in a way that allows for parallelism but doesn't require it.
+  \vspace{5mm}
+  \begin{itemize}
+    \item Distribution as a first-class citizen.
+    \item Concurrency models:
+      \begin{itemize}
+        \item Granularity: From threads to CSP.
+        \item \href{https://www.youtube.com/watch?v=ELwEdb_pD0k}{Actor model} (e.g., as used in Elixir).
+      \end{itemize}
+    \item Introspection of concurrent systems.
+    \item Bounding concurrency.
+    \item Moving processing to where the data is.
+    \item Distribution models: Trading latency and traffic against availability and recovery time.
+  \end{itemize}
 \end{frame}
 
 \subsection{Availability}
 \begin{frame}
-    \frametitle{Availability}
-    \vspace{3mm}
-    Keeping a service available despite faults in soft- and hardware. 
-    \vspace{5mm}
-    \begin{itemize}
-        \item Fault tolerance.
-        \item Graceful degradation.
-        \item Supervision trees.
-        \item Netsplits and resulting split brain scenarios.
-        \item Hot-updates.
-        \item Live introspection.
-        \item Unit testing for availability.
-    \end{itemize}
+  \frametitle{Availability}
+  \vspace{3mm}
+  Keeping a service available despite faults in soft- and hardware. 
+  \vspace{5mm}
+  \begin{itemize}
+    \item Fault tolerance.
+    \item Graceful degradation.
+    \item Supervision trees.
+    \item Netsplits and resulting split brain scenarios.
+    \item Hot-updates.
+    \item Live introspection.
+    \item Unit testing for availability.
+  \end{itemize}
+  
+  \vspace{5mm}
+  Looking past the five nines toy metric.
 \end{frame}
 
 \subsection{Responsiveness}
 \begin{frame}
-    \frametitle{Responsiveness}
-    \vspace{3mm}
-    Keeping the system responsive despite a high load.
-    \vspace{5mm}
-    \begin{itemize}
-        \item Bounding concurrency through back pressure.
-        \item Push-based data flow that transforms problems to routing problems.
-        \item Modeling the distribution of responsiveness.
-        \item Polling-free operation.
-    \end{itemize}
+  \frametitle{Responsiveness}
+  \vspace{3mm}
+  Keeping the system responsive despite a high load.
+  \vspace{5mm}
+  \begin{itemize}
+    \item Bounding concurrency through back pressure.
+    \item Push-based data flow that transforms problems to routing problems.
+    \item Modeling the distribution of responsiveness.
+    \item Polling-free operation.
+  \end{itemize}
 \end{frame}
 
-\subsection{Metadata}
+\subsection{Metadata / Information}
 \begin{frame}
-    \frametitle{Metadata}
-    \vspace{0mm}
-    Modeling (and interaction with) data used to describe other data.
-    \vspace{2mm}
-    \begin{itemize}
-        \descitem{Software-defined metadata} The decision of \textsl{how} parts of a query against a metadata model are resolved can be taken dynamically, and be implemented by arbitrary logic. This can take physical state into account, or extend the set of available physical sensors (from the model) with virtual sensors that are spun up on demand.
-        \item Interactions models for metadata.
-          \begin{itemize}
-            \item Query-based subscriptions.
-          \end{itemize}
-        \item Metadata lifecycle.
-          \begin{itemize}
-            \item Metadata as a timeseries.
-            \item Correction to historical metadata.
-          \end{itemize}
-        \item Graphs.
-        \item Ontologies.
-        \item Papertrail of the processing steps that led to some data being produced.
-    \end{itemize}
+  \frametitle{Metadata / Information}
+  \vspace{0mm}
+  Modeling (and interaction with) data used to describe other data.
+  \vspace{2mm}
+  \begin{itemize}
+    \descitem{Software-defined information} The decision of \textsl{how} parts of a query against an information model are resolved can be taken dynamically, and be implemented by arbitrary logic. This can take physical state into account, or extend the set of available physical sensors (from the model) with virtual sensors that are spun up on demand.
+    \item Interactions models for information models.
+      \begin{itemize}
+        \item Query-based subscriptions.
+      \end{itemize}
+    \item Information lifecycle.
+      \begin{itemize}
+        \item Information as a timeseries.
+        \item Corrections to historical metadata.
+      \end{itemize}
+    \item Graphs.
+    \item Ontologies.
+    \item Papertrail of the processing steps that led to some data being produced.
+  \end{itemize}
 \end{frame}
 
 \subsection{Efficiency}
 \begin{frame}
-    \frametitle{Efficiency}
-    \vspace{3mm}
-    Software that operates at \textsl{reasonable} levels of efficiency.
-    \vspace{5mm}
-    \begin{itemize}
-        \item Green computing.
-        \item API design for efficient operations.
-        \item Non-destructive processing.
-        \item Caching-friendly DAG-Based data processing.
-        \item Demand-driven data processing and transfer.
-        \item Virtual assets and sensors, that extend the applicability of existing physical assets and sensors.
+  \frametitle{Efficiency}
+  \vspace{3mm}
+  Software that operates at \textsl{reasonable} levels of efficiency.
+  \vspace{5mm}
+  \begin{itemize}
+    \item Green computing.
+    \item API design for efficient operations.
+    \item Non-destructive processing.
+    \item Caching-friendly DAG-Based data processing.
+    \item Demand-driven data processing and transfer.
+    \item Virtual assets and sensors, that extend the applicability of existing physical assets and sensors.
     \end{itemize}
 \end{frame}
 
 \subsection{Automation}
 \begin{frame}
-    \frametitle{Automation}
-    \vspace{3mm}
-    Moving tasks to software to enable repeated processing at low cost.
-    \vspace{5mm}
-    \begin{itemize}
-        \item Manual-first principle.
-        \item Tooling for manipulating SVG figures:
-          \url{https://github.com/aslakjohansen/svg-narrative}
-        \item Large-scale automated benchmarking.
-        \item Document transformations.
-        \item Having a single root of truth.
-    \end{itemize}
+  \frametitle{Automation}
+  \vspace{3mm}
+  Moving tasks to software to enable repeated processing at low cost.
+  \vspace{5mm}
+  \begin{itemize}
+    \item Manual-first principle.
+    \item Tooling for manipulating SVG figures:
+      \url{https://github.com/aslakjohansen/svg-narrative}
+    \item Large-scale automated benchmarking.
+    \item Document transformations.
+    \item Having a single root of truth.
+  \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Domains
 \section{Domains}
 \begin{frame}
-    \vspace{25mm}
-    \begin{center}
-        \Huge{Part 2:\\Domains}
-    \end{center}
+  \vspace{25mm}
+  \begin{center}
+    \Huge{Part 2:\\Domains}
+  \end{center}
 \end{frame}
 
 \subsection{Buildings}
 \begin{frame}
-    \frametitle{Buildings}
-    \vspace{3mm}
-    \begin{itemize}
-        \item Buildings are cypher-physical systems.
-        \item Instrumented using a mixture of:
-          \begin{itemize}
-            \item Old-school wired automation systems.
-            \item Ad-hoc modern IoT installations.
-          \end{itemize}
-        \item Logic is typically hardcoded instead of being informed by an exposed metadata model.
-        \item This makes it very costly to (i) make adjustments to existing systems, and (ii) introduce new software systems.
-        \item And that, in turn, makes it expensive to transform data from existing sensors to actionable insights.
-    \end{itemize}
+  \frametitle{Buildings}
+  \vspace{3mm}
+  \begin{itemize}
+    \item Buildings are cypher-physical systems.
+    \item Instrumented using a mixture of:
+      \begin{itemize}
+        \item Old-school wired automation systems.
+        \item Ad-hoc modern IoT installations.
+      \end{itemize}
+    \item Logic is typically hardcoded instead of being informed by an exposed information model.
+    \item This makes it very costly to (i) make adjustments to existing systems, and (ii) introduce new software systems.
+    \item And that, in turn, makes it expensive to transform data from existing sensors to actionable insights.
+  \end{itemize}
+\end{frame}
+
+\subsection{Electrical Grid}
+\begin{frame}
+  \frametitle{Electrical Grid}
+  \vspace{1mm}
+  \begin{itemize}
+    \item At a high-level of abstraction, the grid can be seen as a graph or a flow network.
+      \begin{itemize}
+        \item Denmark is represented as a subgraph of this.
+      \end{itemize}
+    \item Production has to be balanced with consumption. Otherwise, various equipment will degrade or simply break.
+      \begin{itemize}
+        \item As the fraction of power produced by renewables increase, so does the natural fluctuations of production.
+        \item As more and more equipment becomes programmatically controllable, so does our ability to shift load (aka consumption) in time.
+      \end{itemize}
+    \item This leads to several problem areas that need urgent exploration, including:
+      \begin{itemize}
+        \item How to implement a robust mechanism for balancing the grid? How decentralized should it be?
+        \item How to implement the necessary information exchange across borders? This involves governance, ownership, federation, and access control.
+        \item How to model the configuration of the grid (as a timeplane)?
+        \item How to describe the lineage of enriched data in such a way that one can reason about its quality and discard it if one of the underlying premises are found to be flawed?
+      \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \subsection{Environment}
 \begin{frame}
-    \frametitle{Environment}
-    \vspace{3mm}
-    Themes:
-    \begin{itemize}
-        \item Monitoring of environmental properties using battery- or solar-powered sensor boards.
-        \item Processing of multispectral satellite images (e.g., to count trees, create a heatmap of average tree diameter, or track use of pesticides).
-        \item Using a camera as a sensor.
-        \item Robust LoRa-based data collection network for environmental data.
-        \item The EU taxonomy for sustainable activities:
-          \\
-          \scalebox{0.5}{\url{https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en}}
-    \end{itemize}
+  \frametitle{Environment}
+  \vspace{3mm}
+  Themes:
+  \begin{itemize}
+    \item Monitoring of environmental properties using battery- or solar-powered sensor boards.
+    \item Processing of multispectral satellite images (e.g., to count trees, create a heatmap of average tree diameter, or track use of pesticides).
+    \item Using a camera as a sensor.
+    \item Robust LoRa-based data collection network for environmental data.
+    \item The EU taxonomy for sustainable activities:
+      \\
+      \scalebox{0.5}{\url{https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en}}
+  \end{itemize}
 \end{frame}
 
 \subsection{Society}
 \begin{frame}
-    \frametitle{Society}
-    \vspace{3mm}
-    Themes:
-    \begin{itemize}
-        \item Climate change mitigation and adaptation
-        \item Privacy under comfort
-          \begin{itemize}
-            \item Automatic fillout of cookie preferences
-          \end{itemize}
-        \item Getting trustworthy, verifiable and retractable references into the news cycle
-        \item General open source tool support (e.g., for teaching; \#not-selfish). Examples:
-          \begin{itemize}
-            \item Flexible clicker platform
-              \\
-              \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/clicker-system.md}}
-          \end{itemize}
-        \item Privacy
-          \begin{itemize}
-            \item Privacy Analyzer
-              \\
-              \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/privacy-analyzer.md}}
-            \item Practical cookie agreement analysis
-              \\
-              \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/cookie_agreements.md}}
-          \end{itemize}
-    \end{itemize}
+  \frametitle{Society}
+  \vspace{3mm}
+  Themes:
+  \begin{itemize}
+    \item Climate change mitigation and adaptation
+    \item Privacy under comfort
+      \begin{itemize}
+        \item Automatic fillout of cookie preferences
+      \end{itemize}
+    \item Getting trustworthy, verifiable and retractable references into the news cycle
+    \item General open source tool support (e.g., for teaching; \#not-selfish). Examples:
+      \begin{itemize}
+        \item Flexible clicker platform
+          \\
+          \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/clicker-system.md}}
+      \end{itemize}
+    \item Privacy
+      \begin{itemize}
+        \item Privacy Analyzer
+          \\
+          \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/privacy-analyzer.md}}
+        \item Practical cookie agreement analysis
+          \\
+          \scalebox{.8}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/cookie_agreements.md}}
+      \end{itemize}
+  \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sample Project Selection
 \section{Sample Project Selection}
 \begin{frame}
-    \vspace{25mm}
-    \begin{center}
-        \Huge{Part 3:\\Sample Project Selection}
-    \end{center}
+  \vspace{25mm}
+  \begin{center}
+    \Huge{Part 3:\\Sample Project Selection}
+  \end{center}
 \end{frame}
 
 \subsection{PubSub Broker Supporting Demand-Driven Publications}
 \begin{frame}
-    \frametitle{PubSub Broker Supporting Demand-Driven Publications}
-    \vspace{3mm}
-    The Publish-Subscribe pattern allows subscribers to receive data from publishers via named channels. A broker (or more) is used to match up publications to subscribers, but also serves the role of decoupling the two sides.
-    
-    \vspace{5mm}
-    Accordingly, a subscriber does not know if anyone is consuming the produced data, and thus the pattern provides no means of automatically deciding whether a datastream needs be produced or not.
-    
-    \vspace{5mm}
-    This project seeks to add a step whereby the publishers -- through a form of two-way pubsub -- are informed of the ongoing subscriptions. Based on this they can then decide on which datastreams to publish. The improved efficiency model will allow for a larger suite of datastreams to be offered, while only \textsl{paying} for those being consumed.
+  \frametitle{PubSub Broker Supporting Demand-Driven Publications}
+  \vspace{3mm}
+  The Publish-Subscribe pattern allows subscribers to receive data from publishers via named channels. A broker (or more) is used to match up publications to subscribers, but also serves the role of decoupling the two sides.
+  
+  \vspace{5mm}
+  Accordingly, a subscriber does not know if anyone is consuming the produced data, and thus the pattern provides no means of automatically deciding whether a datastream needs be produced or not.
+  
+  \vspace{5mm}
+  This project seeks to add a step whereby the publishers -- through a form of two-way pubsub -- are informed of the ongoing subscriptions. Based on this they can then decide on which datastreams to publish. The improved efficiency model will allow for a larger suite of datastreams to be offered, while only \textsl{paying} for those being consumed.
 
-%    \vspace{3mm}
-%    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
+%  \vspace{3mm}
+%  Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
 \end{frame}
 
 \subsection{Cypher to SparQL Adaptor Service}
 \begin{frame}
-    \frametitle{Cypher to SparQL Adaptor Service}
-    \vspace{3mm}
-    RDF is a language for describing ontologies using triples. OWL builds a class model on top of RDF. SparQL allows us to query this. Due to the level of abstraction such models have a number of benefits (e.g., validation and reasoning) but also a learning curve that is prohibitive.
-    
-    \vspace{5mm}
-    Cypher, on the other hand, is a query language for property graphs. It is easy to reason about, and operates at at level of abstraction that is comparable to OWL.
-    
-    \vspace{5mm}
-    This project seeks to construct a server that exposes a service which takes a Cypher query as input, parses it, transforms it to SparQL (that targets an OWL level of abstraction) and uses another service to resolve it against an OWL model.
-%    \vspace{3mm}
-%    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
+  \frametitle{Cypher to SparQL Adaptor Service}
+  \vspace{3mm}
+  RDF is a language for describing ontologies using triples. OWL builds a class model on top of RDF. SparQL allows us to query this. Due to the level of abstraction such models have a number of benefits (e.g., validation and reasoning) but also a learning curve that is prohibitive.
+  
+  \vspace{5mm}
+  Cypher, on the other hand, is a query language for property graphs. It is easy to reason about, and operates at at level of abstraction that is comparable to OWL.
+  
+  \vspace{5mm}
+  This project seeks to construct a server that exposes a service which takes a Cypher query as input, parses it, transforms it to SparQL (that targets an OWL level of abstraction) and uses another service to resolve it against an OWL model.
+%  \vspace{3mm}
+%  Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
 \end{frame}
 
 \subsection{D3 Phoenix LiveView Components}
 \begin{frame}
-    \frametitle{D3 Phoenix LiveView Components}
-    \vspace{0mm}
-    Phoenix is a modern web framework that allows for quick prototyping of web applications while keeping a simple path for transitioning it to production. It is build around a MVC component model called LiveView that crosses the client/server boundary and naturally provides fast response times and hot updates. As long as existing components are applicable, no JavaScript code is necessary to make a website. However, the set of LiveView components for plotting is limited.
-    
-    \vspace{3mm}
-    D3 is an attractive JavaScript framework for plotting.
-    
-    \vspace{3mm}
-    The goal for this project is to:
-    \begin{enumerate}
-      \item Produce a number of both common and representative usecases.
-      \item Generalize these to increase applicability.
-      \item Produce a number of LiveView components that supports these generalized usecases.
-      \item Document the process of producing LiveView components for D3.
-    \end{enumerate}
+  \frametitle{D3 Phoenix LiveView Components}
+  \vspace{0mm}
+  \href{https://www.phoenixframework.org/}{Phoenix} is a modern web framework that allows for quick prototyping of web applications while keeping a simple path for transitioning it to production. It is build around a MVC component model called LiveView that crosses the client/server boundary and naturally provides fast response times and hot updates. As long as existing components are applicable, no JavaScript code is necessary to make a website. However, the set of LiveView components for plotting is limited.
+  
+  \vspace{3mm}
+  \href{https://d3js.org/}{D3} is an attractive JavaScript framework for plotting.
+  
+  \vspace{3mm}
+  The goal for this project is to:
+  \begin{enumerate}
+    \item Produce a number of both common and representative usecases.
+    \item Generalize these to increase applicability.
+    \item Produce a number of LiveView components that supports these generalized usecases.
+    \item Document the process of producing LiveView components for D3.
+  \end{enumerate}
 
-%    \vspace{3mm}
-%    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
+%  \vspace{3mm}
+%  Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/?.md}}
 \end{frame}
-
-%\subsection{Make Media Credible Again}
-%\begin{frame}
-%    \frametitle{Make Media Credible Again}
-%    \vspace{0mm}
-%    During the last decade or so, the credibility of online media has taken a dive. It has gotten so bad that there is no longer a shared sense of reality, and that has severe democratic implications.
-%    
-%    \vspace{3mm}
-%    We would like to create a system that allows us to track the premise graph of news:
-%    \begin{itemize}
-%      \item Peer review based on user preferences rooted in a social network.
-%      \item Users will see credibility scores based on functions over their own set of trusted references. This makes the score subjective, and that subjectiveness should be observable through cluster and fragility analysis.
-%      \item Cycle detection to highlight that an "argument" is cyclic in nature and thus invalid.
-%      \item Subgraph invalidation when a premise is debunked.
-%      \item Subscription to invalidation. So that users get notified whenever a document that they have consumed is found invalid.
-%    \end{itemize}
-
-%    \vspace{3mm}
-%    Full text: \scalebox{0.85}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/mmca.md}}
-%\end{frame}
 
 \subsection{Pesticide Use Monitoring}
 \begin{frame}
-    \frametitle{Pesticide Use Monitoring}
-    % problem
-    Pesticides from the agricultural sector are finding their way into the ground water. While there are regulations in place to govern when and how much can be sprayed, the reality is that a only a small number of annual inspections are mandated. As a result, chances of getting caught are slim.
-    \vspace{2mm}
-    
-    % dataset
-    Multispectral data from satellites can be used to detect to calculate the photosynthetic activity (aka \quoted{greeness}) of areas. When combined with GIS data defining the geographical areas of farmers plots, such plots can be mapped to greenness. Each pass these satellites generate a snapshot of that mapping at a single point in time. The history of passing shows how it evolves over time.
-    \vspace{2mm}
-    
-    % approach
-    By analyzing this evolution we can detect which plots have likely been exposed to excessive amounts of pesticides, and use this to guide the inspectors to the most likely violations. That will make the act of polluting our groundwater more risky.
-    \vspace{2mm}
-    
-    More information will appear at: \scalebox{0.75}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/pesticide-use-monitoring.md}}
+  \frametitle{Pesticide Use Monitoring}
+  % problem
+  Pesticides from the agricultural sector are finding their way into the ground water. While there are regulations in place to govern when and how much can be sprayed, the reality is that a only a small number of annual inspections are mandated. As a result, chances of getting caught are slim.
+  \vspace{2mm}
+  
+  % dataset
+  Multispectral data from satellites can be used to detect to calculate the photosynthetic activity (aka \quoted{greeness}) of areas. When combined with GIS data defining the geographical areas of farmers plots, such plots can be mapped to greenness. Each pass these satellites generate a snapshot of that mapping at a single point in time. The history of passing shows how it evolves over time.
+  \vspace{2mm}
+  
+  % approach
+  By analyzing this evolution we can detect which plots have likely been exposed to excessive amounts of pesticides, and use this to guide the inspectors to the most likely violations. That will make the act of polluting our groundwater more risky.
+  \vspace{2mm}
+  
+  More information will appear at: \scalebox{0.75}{\url{https://github.com/aslakjohansen/student-projects/blob/master/db/pesticide-use-monitoring.md}}
 \end{frame}
 
