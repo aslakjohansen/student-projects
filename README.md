@@ -32,6 +32,7 @@ Programming languages:
   - [Saša Jurić - High availability with Elixir and Erlang - Full Stack Fest 2016](https://www.youtube.com/watch?v=Ba3aCm3A0o8)
   - [Phoenix LiveView](https://www.youtube.com/watch?v=k4mSbCoBTPI)
 - [Rust](https://www.rust-lang.org) Programming language with focus on reliability, efficiency and productivity.
+- [Zig](https://ziglang.org) Natural successor to the C language.
 - [WebAssembly](https://webassembly.org) (WASM) JavaScript replacement. Usually through Rust (see above).
 - [Go](https://golang.org) Programming language with focus on concurrency on a single host.
 - [Julia](https://julialang.org)
