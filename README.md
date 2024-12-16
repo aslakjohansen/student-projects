@@ -49,7 +49,7 @@ Alternative forms of databases:
 - Wide-column data stores like:
   - [ScyllaDB](https://www.scylladb.com)
 - Misc:
- - [CouchDB](https://couchdb.apache.org) Distributed document storage with eventual consistency that is built for intermittently offline nodes.
+  - [CouchDB](https://couchdb.apache.org) Distributed document storage with eventual consistency that is built for intermittently offline nodes.
 
 Embedded Frameworks:
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
