@@ -47,7 +47,7 @@ Alternative forms of databases:
   - [Neo4J](https://neo4j.com) A property graph database.
   - [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))
 - Wide-column data stores like:
-  - [ScyllaDB](https://www.scylladb.com)
+  - [ScyllaDB](https://www.scylladb.com) Like Cassandra, but with significantly better performance.
 - Misc:
   - [CouchDB](https://couchdb.apache.org) Distributed document storage with eventual consistency that is built for intermittently offline nodes.
 
