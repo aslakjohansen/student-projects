@@ -48,6 +48,8 @@ Alternative forms of databases:
   - [Gremlin](https://en.wikipedia.org/wiki/Gremlin_(query_language))
 - Wide-column data stores like:
   - [ScyllaDB](https://www.scylladb.com)
+- Misc:
+ - [CouchDB](https://couchdb.apache.org) Distributed document storage with eventual consistency that is built for intermittently offline nodes.
 
 Embedded Frameworks:
 - [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
