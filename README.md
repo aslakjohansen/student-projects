@@ -35,7 +35,7 @@ Programming languages:
 - [Zig](https://ziglang.org) Natural successor to the C language.
 - [WebAssembly](https://webassembly.org) (WASM) JavaScript replacement. Usually through Rust (see above).
 - [Go](https://golang.org) Programming language with focus on concurrency on a single host.
-- [Julia](https://julialang.org)
+- [Julia](https://julialang.org) High-level language with low-level performance developed by [greedy](https://julialang.org/blog/2012/02/why-we-created-julia/) people.
 - [Python](https://www.python.org) for scripting purposes.
 
 Alternative forms of databases:
