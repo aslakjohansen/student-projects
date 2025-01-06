@@ -19,7 +19,7 @@ How can we make a software-defined presentation system with real-time audience i
 
 Technology stack:
 - Phoenix
-- LiveView
+- [LiveView](https://www.youtube.com/watch?v=6isrz8LI00o)
 
 Views:
 - Main presentation view
