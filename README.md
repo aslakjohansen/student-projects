@@ -42,6 +42,7 @@ Alternative forms of databases:
 - Timeseries databases like:
   - [TimescaleDB](https://www.timescale.com)
   - [Prometheus](https://en.wikipedia.org/wiki/Prometheus_(software))
+  - [Riak TS](https://riak.com/products/riak-ts/)
 - Graph databases and graph querying languages like:
   - [OpenCypher](https://opencypher.org)
   - [Neo4J](https://neo4j.com) A property graph database.
