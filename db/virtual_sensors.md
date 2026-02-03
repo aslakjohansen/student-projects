@@ -4,7 +4,7 @@
 
 ## Introduction
 
-We can use models (e.g., ones based on ontologies) to describe both physical and service characteristics of cyber-physical systems. For buildings one choise would be [Brick](https://brickschema.org). However, this ontology (and the equivalents for other domains) only describe physical hardware. This allows us to associate a room with a specific temperature sensor. However, deploying sensors can be costly, and many modalities can be simulated using *virtual sensors*. A virtual sensor is a piece of logic that -- given a configuration of specific inputs -- can produce an output that is reasonably close to what a physical sensor would.
+We can use models (e.g., ones based on ontologies or property graphs) to describe both physical and service characteristics of cyber-physical systems. For buildings one choise would be [Brick](https://brickschema.org). However, this ontology (and the equivalents for other domains) only describe physical hardware. This allows us to associate a room with a specific temperature sensor. However, deploying sensors can be costly, and many modalities can be simulated using *virtual sensors*. A virtual sensor is a piece of logic that -- given a configuration of specific inputs -- can produce an output that is reasonably close to what a physical sensor would.
 
 As an example, given the ventilation rate of a room an estimation of the number of occupants can be produced. This is clearly not as precise as a camera-based solution, but for many rooms it comes (theoretically) free of cost.
 
