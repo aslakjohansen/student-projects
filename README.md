@@ -60,7 +60,7 @@ Embedded Frameworks:
 Hardware:
 - [ESP32](http://esp32.net) Cheap and powerful microcontroller.
 - [Pine64 Ox64](https://wiki.pine64.org/wiki/Ox64) High performance/cost device with WiFi, BT and Zigbee radios that can be used hosting either a general purpose OS or a realtime OS. I am really hoping for a Nerves port.
-- [Hardkernel ODROID-H3+](ODROID-H3+) for a home cluster.
+- [Hardkernel ODROID H4 Ultra](https://www.hardkernel.com/shop/odroid-h4-ultra/) for a home cluster.
 - [Pine64 NutCracker](https://wiki.pine64.org/wiki/Nutcracker) Extremely cheap IoT devices based on the open source(ish) RISC-V architecture.
 
 Graphics:
