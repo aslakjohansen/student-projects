@@ -53,9 +53,9 @@ Alternative forms of databases:
   - [CouchDB](https://couchdb.apache.org) Distributed document storage with eventual consistency that is built for intermittently offline nodes.
 
 Embedded Frameworks:
-- [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
-- [AtomVM](https://www.atomvm.net) Running BEAM code (e.g., Elixir) on microcontrollers.
 - [Nerves](https://nerves-project.org) Running Elixir on top of small general-purpose hardware (e.g., Raspberry Pi).
+- [AtomVM](https://www.atomvm.net) Running BEAM code (e.g., Elixir) on microcontrollers.
+- [FreeRTOS](https://www.freertos.org) Real-time operating system for microcontrollers.
 
 Hardware:
 - [ESP32](http://esp32.net) Cheap and powerful microcontroller.
