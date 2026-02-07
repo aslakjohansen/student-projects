@@ -7,6 +7,7 @@ In a systems context:
 - **Availability** Keeping a service available despite faults in soft- and hardware.
   - Supervision in systems based on the [actor model](https://en.wikipedia.org/wiki/Actor_model) (e.g., through [Elixir](https://elixir-lang.org)).
   - Netsplits and resulting split brain scenarios.
+  - Unit testing for availability
 - **Responsiveness** Keeping the system responsive despite a high load.
   - Bounding concurrency through back pressure.
   - Push-based data flow transformes problems to routing problems.
