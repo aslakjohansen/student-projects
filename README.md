@@ -4,6 +4,7 @@
 
 In a systems context:
 - **Concurrency** Logic defined in a way that allows for parallelism but doesn't require it.
+  - Qualities like responsiveness
 - **Availability** Keeping a service available despite faults in soft- and hardware.
   - Supervision in systems based on the [actor model](https://en.wikipedia.org/wiki/Actor_model) (e.g., through [Elixir](https://elixir-lang.org)).
   - Netsplits and resulting split brain scenarios.
