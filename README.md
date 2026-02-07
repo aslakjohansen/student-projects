@@ -13,6 +13,9 @@ In a systems context:
   - Push-based data flow transformes problems to routing problems.
 - **Metadata** Modeling and interaction with data used to describe other data.
   - Graphs and ontologies.
+  - Federation
+  - Distribution
+  - Interaction models
 - **Efficiency** Software that operates at reasonable levels of efficiency.
 - **Automation** Moving tasks to software to enable repeated processing at low cost.
 
