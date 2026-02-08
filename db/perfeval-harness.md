@@ -18,7 +18,7 @@ Part of that is to keep track of which processes make up the system, and how muc
 
 ## Problem
 
-Is it possible to get around the restrictions on OSX (e.g., by beoming a privileged user), or would these students have to use a virtual machine?
+Is it possible to get around the restrictions on OSX (e.g., by becoming a privileged user), or would these students have to use a virtual machine?
 
 What should a portable general-purpose performance evaluation framework for producing log files look like?
 
